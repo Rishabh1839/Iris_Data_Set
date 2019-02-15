@@ -39,3 +39,8 @@ print("Shows the label for 0.")
 print("==========Label Table==========")
 print("0 = setosa 1 = versicolor 2 = virginica")
 print("Label =", iris_data_set.target[0])
+
+print("=" * 70)
+print("The full data set to reference: ")
+for i in range(len(iris_data_set.target)):
+    print("Example %d: label %s: Features %s:" % (i, iris_data_set.target[i], iris_data_set.data[i]))
